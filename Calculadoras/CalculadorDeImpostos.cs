@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns
+﻿using DesignPatterns.Impostos;
+
+namespace DesignPatterns.Calculadoras
 {
     public class CalculadorDeImpostos
     {

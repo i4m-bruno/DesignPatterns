@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns
+﻿namespace DesignPatterns.Impostos
 {
     public class ICMS : Imposto
     {
