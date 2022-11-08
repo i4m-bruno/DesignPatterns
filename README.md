@@ -1,21 +1,21 @@
 
 # Design Patterns
-Estou fazendo esse projeto com intenção de treinar o uso de padrões de projeto e de quebra compartilhar o conhecimneto.
+Estou fazendo esse projeto com intenÃ§Ã£o de treinar o uso de padrÃµes de projeto e de quebra compartilhar o conhecimneto.
 
 
 ## Pattern 1 - Strategy
-Objetivo / Intenção Definir uma família de algoritmos, encapsular cada um, e fazê-los intercambiáveis, ele permite que algoritmos variem independentemente entre clientes que os utilizam.
+Objetivo / IntenÃ§Ã£o Definir uma famÃ­lia de algoritmos, encapsular cada um, e fazÃª-los intercambiÃ¡veis, ele permite que algoritmos variem independentemente entre clientes que os utilizam.
 
-Também conhecido como: Policy
+TambÃ©m conhecido como: Policy
 
-Motivação: Quando se necessita de um algoritmo que trata de modos diferentes os dados submetidos a ele.
+MotivaÃ§Ã£o: Quando se necessita de um algoritmo que trata de modos diferentes os dados submetidos a ele.
 
 ## Pattern 2 - Chain of Responsability
-Chain of Responsibility é um padrão de design comportamental que permite passar solicitações ao longo de uma cadeia de manipuladores. Ao receber uma solicitação, cada manipulador decide processar a solicitação ou passá-la para o próximo manipulador da cadeia.
+Chain of Responsibility Ã© um padrÃ£o de design comportamental que permite passar solicitaÃ§Ãµes ao longo de uma cadeia de manipuladores. Ao receber uma solicitaÃ§Ã£o, cada manipulador decide processar a solicitaÃ§Ã£o ou passÃ¡-la para o prÃ³ximo manipulador da cadeia.
 
-Você pode ver um exemplo neste projeto, busque a interface IDesconto e veja que as classes que implementam essa interface devem ter uma propriedade
-também implementa a interface IDesconto, gerando assim a corrente de responsabilidade.
+VocÃª pode ver um exemplo neste projeto, busque a interface IDesconto e veja que as classes que implementam essa interface devem ter uma propriedade
+tambÃ©m implementa a interface IDesconto, gerando assim a corrente de responsabilidade.
 
 ## Pattern 3 - Template Method
-Basicamente o Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura.
-O Template Method utiliza uma classe abstrata base, que vai encapsular o template do algoritmo em um método, para que as classes concretas possam herdar desta classe e realizar a implementação de determinados passos deste algoritmo.
+Basicamente o Template Method Ã© um padrÃ£o de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas especÃ­ficas do algoritmo sem alterar sua estrutura.
+O Template Method utiliza uma classe abstrata base, que vai encapsular o template do algoritmo em um mÃ©todo, para que as classes concretas possam herdar desta classe e realizar a implementaÃ§Ã£o de determinados passos deste algoritmo.
