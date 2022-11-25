@@ -2,9 +2,18 @@
 {
     public class ISS : Imposto
     {
-        public double Calcula(Orcamento orcamento)
+        public ISS()
         {
-            return orcamento.Valor * 0.6;
+
+        }
+
+        public ISS(Imposto outroImposto) : base(outroImposto)
+        {
+
+        }
+        public override double Calcula(Orcamento orcamento)
+        {
+            return orcamento.Valor * 0.6 + CalcularOutroImposto(orcamento); ;
         }
     }
 }

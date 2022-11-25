@@ -8,7 +8,7 @@ namespace DesignPatterns.Impostos
 {
     public abstract class ImpostoCondicionalTemplate : Imposto
     {
-        public double Calcula(Orcamento orcamento)
+        public override double Calcula(Orcamento orcamento)
         {
             if (DeveUsarTaxaMax(orcamento))
                 return TaxaMax(orcamento);

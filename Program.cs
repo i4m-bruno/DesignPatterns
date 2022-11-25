@@ -19,19 +19,17 @@ public class program
 
     static void CalcularImpostos()
     {
-        Imposto icms = new ICMS();
-        Imposto iss = new ISS();
+        Imposto icmsMaisIss = new ICMS(new ISS());
         Imposto iof = new IOF();
         Imposto icpp = new ICPP();
 
         Orcamento orcamento = new Orcamento(2000);
         CalculadorDeImpostos calculadorDeImpostos = new CalculadorDeImpostos();
+
         orcamento.Itens.Add(new Item(999, "Smartphone"));
 
-        Console.WriteLine("Valor ICMS:");
-        calculadorDeImpostos.Calcular(orcamento, icms);
-        Console.WriteLine("Valor ISS:");
-        calculadorDeImpostos.Calcular(orcamento, iss);
+        Console.WriteLine("Valor ICMS + ISS:");
+        calculadorDeImpostos.Calcular(orcamento, icmsMaisIss);
         Console.WriteLine("Valor IOF:");
         calculadorDeImpostos.Calcular(orcamento, iof);
         Console.WriteLine("Valor ICPP:");
