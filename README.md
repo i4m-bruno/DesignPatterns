@@ -19,3 +19,16 @@ também implementa a interface IDesconto, gerando assim a corrente de responsabi
 ## Pattern 3 - Template Method
 Basicamente o Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, mas permite que as subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura.
 O Template Method utiliza uma classe abstrata base, que vai encapsular o template do algoritmo em um método, para que as classes concretas possam herdar desta classe e realizar a implementação de determinados passos deste algoritmo.
+
+## Pattern 4 - Decorator
+É um padrão que nos permite estender (decorar) dinamicamente as características de uma classe qualquer. Por características entendemos estado (state: campos e propriedades - propriedades somente em .Net) ou comportamento (behavior: métodos).
+
+É uma alternativa à herança e tem uma diferença importante (e que torna o seu uso mais flexível) em relação àquela:
+
+herança é definida em tempo de compilação;
+uma classe decorada é definida em tempo de execução.
+Quando usar:
+
+Quando temos uma classe que não queremos herdar;
+Quando temos uma classe que não pode ser herdada por ser final - em java -, sealed - em C# - ou NotInheritable - em VB.Net;
+Quando temos uma classe que não pode ser herdada por estarmos herdando de uma outra classe qualquer.
