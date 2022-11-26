@@ -1,6 +1,6 @@
 
 # Design Patterns
-Estou fazendo esse projeto com intenção de treinar o uso de padrões de projeto e de quebra compartilhar o conhecimneto.
+Estou fazendo esse projeto com intenção de treinar o uso de padrões de projeto e de quebra compartilhar o conhecimento.
 
 
 ## Pattern 1 - Strategy
