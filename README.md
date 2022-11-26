@@ -32,3 +32,9 @@ Quando usar:
 Quando temos uma classe que não queremos herdar;
 Quando temos uma classe que não pode ser herdada por ser final - em java -, sealed - em C# - ou NotInheritable - em VB.Net;
 Quando temos uma classe que não pode ser herdada por estarmos herdando de uma outra classe qualquer.
+
+## Pattern 5 - State
+Este padrão é usado quando há muitos relacionamentos entre objetos, como se um objeto for modificado, seus objetos dependentes devem ser notificados automaticamente. State Design Pattern é usado para alterar o comportamento de um objeto quando seu estado interno muda. Nesse padrão,
+um objeto é criado que representa vários estados e um objeto de contexto cujo comportamento varia à medida que seu objeto de estado muda.
+
+Esse padrão parece uma versão dinâmica do padrão Strategy.

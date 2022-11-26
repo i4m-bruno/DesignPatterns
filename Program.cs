@@ -6,14 +6,27 @@ public class program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Calculando impostos...");
-        CalcularImpostos();
+        //Console.WriteLine("Calculando impostos...");
+        //CalcularImpostos();
 
-        Console.WriteLine("----------------------------");
+        //Console.WriteLine("----------------------------");
 
         Console.WriteLine("Calculando descontos...");
-        CalcularDescontos();
+        //CalcularDescontos();
+        CalculaDescontoPorEstado();
 
+        Console.ReadKey();
+    }
+
+    private static void CalculaDescontoPorEstado()
+    {
+        Orcamento orcamento = new Orcamento(2000);
+        Console.WriteLine($"Valor: {orcamento.Valor}");
+        orcamento.AplicaDescontoExtra();
+        Console.WriteLine($"Desconto pré aprovado: {orcamento.Valor}");
+        orcamento.Aprova();
+        orcamento.AplicaDescontoExtra();
+        Console.WriteLine($"Desconto aprovado: {orcamento.Valor}");
         Console.ReadKey();
     }
 
