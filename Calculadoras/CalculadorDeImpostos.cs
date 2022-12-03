@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Impostos;
+﻿using DesignPatterns.Entidades;
+using DesignPatterns.Impostos;
 
 namespace DesignPatterns.Calculadoras
 {

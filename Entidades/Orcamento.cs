@@ -1,6 +1,6 @@
 ﻿using DesignPatterns.Estados;
 
-namespace DesignPatterns
+namespace DesignPatterns.Entidades
 {
     public class Orcamento
     {

@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Estados
+﻿using DesignPatterns.Entidades;
+
+namespace DesignPatterns.Estados
 {
     public class EmAprovacao : IEstado
     {

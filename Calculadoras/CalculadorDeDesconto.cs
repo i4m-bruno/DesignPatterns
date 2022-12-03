@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Descontos;
+using DesignPatterns.Entidades;
 
 namespace DesignPatterns.Calculadoras
 {

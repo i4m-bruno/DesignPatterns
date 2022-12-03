@@ -1,4 +1,7 @@
-﻿namespace DesignPatterns.Descontos
+﻿using DesignPatterns.Entidades;
+using DesignPatterns.Interfaces;
+
+namespace DesignPatterns.Descontos
 {
     public class DescontoMaisDeCincoItens : IDesconto
     {

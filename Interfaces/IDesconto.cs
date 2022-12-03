@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns
+﻿using DesignPatterns.Entidades;
+
+namespace DesignPatterns.Interfaces
 {
     public interface IDesconto
     {

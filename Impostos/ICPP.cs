@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Impostos
+﻿using DesignPatterns.Entidades;
+
+namespace DesignPatterns.Impostos
 {
     public class ICPP : ImpostoCondicionalTemplate
     {

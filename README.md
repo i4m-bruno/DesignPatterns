@@ -38,3 +38,8 @@ Este padrão é usado quando há muitos relacionamentos entre objetos, como se u
 um objeto é criado que representa vários estados e um objeto de contexto cujo comportamento varia à medida que seu objeto de estado muda.
 
 Esse padrão parece uma versão dinâmica do padrão Strategy.
+
+## Pattern 6 - Builder
+Builder é um padrão de projeto criacional, que permite construir objetos complexos passo a passo.
+
+Ao contrário de outros padrões de criação, o Builder não exige que os produtos tenham uma interface comum. Isso torna possível produzir diferentes produtos usando o mesmo processo de construção.

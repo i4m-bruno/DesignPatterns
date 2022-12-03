@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Calculadoras;
+using DesignPatterns.Entidades;
 using DesignPatterns.Impostos;
 
 namespace DesignPatterns;
@@ -69,5 +70,17 @@ public class program
         Console.WriteLine("Desconto aplicado:");
         var desconto = calculadorDeDesconto.Calcula(orcamento);
         Console.WriteLine(desconto);
+    }
+
+    static void CriarNotaFiscal()
+    {
+        NotaFiscalBuilder notaBuilder = new NotaFiscalBuilder();
+
+        notaBuilder.ComRazaoSocial("NTTDATA")
+                    .ComItem(new ItemNota("Livro", 10))
+                    .ComItem(new ItemNota("Mochila", 100))
+                    .ComData(DateTime.UtcNow);
+
+        var notaFiscal = notaBuilder.GerarNota();
     }
 }
