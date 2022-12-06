@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatterns.Interfaces;
 
 namespace DesignPatterns.Entidades
 {
@@ -13,6 +9,7 @@ namespace DesignPatterns.Entidades
         public DateTime Data { get; private set; } = DateTime.UtcNow;
         public string Observacao { get; private set; } = "";
         public double ValorTotal { get; private set; } = 0;
+        public List<INotaFiscalAction> Actions { get; set; } = new List<INotaFiscalAction>();
 
         public NotaFiscalBuilder()
         {
@@ -29,7 +26,14 @@ namespace DesignPatterns.Entidades
 
         public NotaFiscal GerarNota()
         {
-            return new NotaFiscal(RazaoSocial, Itens, Data, Observacao, ValorTotal);
+            var nf = new NotaFiscal(RazaoSocial, Itens, Data, Observacao, ValorTotal);
+
+            foreach (var action in Actions)
+            {
+                action.Executa(nf);
+            }
+
+            return nf;
         }
 
         public NotaFiscalBuilder ComRazaoSocial(string razaoSocial)
@@ -54,5 +58,7 @@ namespace DesignPatterns.Entidades
             Observacao = observacao;
             return this;
         }
+
+        public void AdicionarAction(INotaFiscalAction action) => Actions.Add(action);
     }
 }

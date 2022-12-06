@@ -42,4 +42,7 @@ Esse padrão parece uma versão dinâmica do padrão Strategy.
 ## Pattern 6 - Builder
 Builder é um padrão de projeto criacional, que permite construir objetos complexos passo a passo.
 
-Ao contrário de outros padrões de criação, o Builder não exige que os produtos tenham uma interface comum. Isso torna possível produzir diferentes produtos usando o mesmo processo de construção.
+Ao contrário de outros padrões de criação, o Builder não exige que os produtos tenham uma interface comum. Isso torna possível produzir diferentes produtos usando o mesmo processo de construção
+
+## Pattern 7 - Observer
+O padrão de projeto Observer define uma dependência um-para-muitos entre os objetos para que, quando um objeto muda de estado, todos os seus dependentes sejam notificados e atualizados automaticamente.
